@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "skill_db_dapp": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle skill_db_dapp",
+            "wasm": ".azle/skill_db_dapp/skill_db_dapp.wasm",
+            "gzip": true
+        }
+    }
+}
+
