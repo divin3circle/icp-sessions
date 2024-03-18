@@ -18,9 +18,10 @@ To get started with this session, follow these steps:
    cd TypeScript for Azle Canister Development 101
    ```
 
-1. Choose a project of the two available and navigate into it:
+1. Navigate to the projects directoty and choose a project of the two available and navigate into it:
 
    ```bash
+   cd projects
    cd azle_hello_world
    ```
 
