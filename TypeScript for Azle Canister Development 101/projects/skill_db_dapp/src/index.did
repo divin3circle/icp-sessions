@@ -1,0 +1,8 @@
+service: () -> {
+    createSkill: (text, principal) -> (record {id:principal; name:text; createdAt:nat64; studentsId:principal});
+    createStudent: (text) -> (record {id:principal; username:text; createdAt:nat64; skillsId:vec principal});
+    getSkillById: (principal) -> (opt record {id:principal; name:text; createdAt:nat64; studentsId:principal}) query;
+    getStudentById: (principal) -> (opt record {id:principal; username:text; createdAt:nat64; skillsId:vec principal}) query;
+    getStudents: () -> (vec record {id:principal; username:text; createdAt:nat64; skillsId:vec principal}) query;
+    getTotalStudents: () -> (nat64) query;
+}
